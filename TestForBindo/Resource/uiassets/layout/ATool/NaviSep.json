@@ -1,0 +1,11 @@
+{
+    "class": "TextView",
+    "layout_width": "wrap_content",
+    "layout_height": "wrap_content",
+    "ellipsize": "end",
+    "lines": "1",
+    "textStyle": "bold",
+    "textColor": "#000",
+    "textSize": "14dp",
+    "text": "--"
+}

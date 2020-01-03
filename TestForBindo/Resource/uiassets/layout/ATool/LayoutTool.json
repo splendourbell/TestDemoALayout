@@ -1,0 +1,104 @@
+{f
+	"class": "LinearLayout",
+	"layout_width": "match_parent",
+	"layout_height": "match_parent",
+	"orientation": "vertical",
+	"children": [
+        {
+        	"class": "RelativeLayout",
+        	"layout_width": "match_parent",
+        	"layout_height": "0dp",
+        	"background": "@color/green",
+            "layout_weight": "1",
+            "id":"_workplace"
+        },
+        {
+        	"class": "LinearLayout",
+        	"layout_width": "match_parent",
+        	"layout_height": "260dp",
+        	"background": "#b9b9b9",
+            "id":"_hierarchy",
+            "orientation": "vertical",
+            "children": [
+                {
+                	"class": "FlowLayout",
+                	"layout_width": "match_parent",
+                	"layout_height": "wrap_content",
+                	"orientation": "horizontal",
+                    "padding": "10dp",
+                	"children": [
+                        {
+                            "class": "include",
+                            "layout": "@layout/ATool/NaviIndicator"
+                        },
+                        {
+                            "class": "include",
+                            "layout": "@layout/ATool/NaviSep"
+                        },
+                        {
+                            "class": "include",
+                            "layout": "@layout/ATool/NaviIndicator"
+                        },
+                        {
+                            "class": "include",
+                            "layout": "@layout/ATool/NaviSep"
+                        },
+                        {
+                            "class": "include",
+                            "layout": "@layout/ATool/NaviIndicator"
+                        },
+                        {
+                            "class": "include",
+                            "layout": "@layout/ATool/NaviSep"
+                        },
+                        {
+                            "class": "include",
+                            "layout": "@layout/ATool/NaviIndicator"
+                        },
+                        {
+                            "class": "include",
+                            "layout": "@layout/ATool/NaviSep"
+                        },
+                        {
+                            "class": "include",
+                            "layout": "@layout/ATool/NaviIndicator"
+                        },
+                        {
+                            "class": "include",
+                            "layout": "@layout/ATool/NaviSep"
+                        },
+                        {
+                            "class": "include",
+                            "layout": "@layout/ATool/NaviIndicator"
+                        },
+                        {
+                            "class": "include",
+                            "layout": "@layout/ATool/NaviSep"
+                        },
+                        {
+                            "class": "include",
+                            "layout": "@layout/ATool/NaviIndicator"
+                        },
+                        {
+                            "class": "include",
+                            "layout": "@layout/ATool/NaviSep"
+                        },
+                        {
+                            "class": "include",
+                            "layout": "@layout/ATool/NaviIndicator"
+                        }
+                    ]
+                },
+                {
+                	"class": "ViewGroup",
+                	"layout_width": "match_parent",
+                	"layout_height": "0dp",
+                    "layout_weight": "1",
+                	"background": "#ccc",
+                    "id":"_detailView",
+                	"children": []
+                }
+            ]
+        }
+    ]
+}

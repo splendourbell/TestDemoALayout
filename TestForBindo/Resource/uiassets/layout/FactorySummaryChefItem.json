@@ -1,0 +1,13 @@
+{
+    "class": "TextView",
+    "layout_width": "wrap_content",
+    "layout_height": "wrap_content",
+    "layout_marginRight": "16dp",
+    "layout_marginTop": "4dp",
+    "ellipsize": "end",
+    "lines": "1",
+    "textColor": "#000",
+    "textSize": "12dp",
+    "text": "Pizza Chef 0: 143",
+    "id":"factorySummaryChefItem"
+}

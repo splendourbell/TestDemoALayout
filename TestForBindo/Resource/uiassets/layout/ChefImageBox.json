@@ -1,0 +1,37 @@
+{
+"class": "RelativeLayout",
+"layout_width": "match_parent",
+"layout_height": "160dp",
+"children": [
+    {
+        "class": "ImageView",
+        "layout_width": "86dp",
+        "layout_height": "86dp",
+        "layout_marginTop":"10dp",
+        "maxHeight": "86dp",
+        "src": "@drawable/default",
+        "scaleType": "centerCrop",
+        "layout_centerHorizontal": "true",
+        "id": "image"
+    },
+    {
+        "class": "SwitchControl",
+        "layout_height": "wrap_content",
+        "layout_width": "wrap_content",
+        "layout_below": "image",
+        "layout_marginTop":"10dp",
+        "clickable":"true",
+        "action":"@selector/workerSwitchAction:",
+        "layout_centerHorizontal": "true",
+        "on": "true",
+        "id":"switchButton"
+    },
+    {
+        "class": "View",
+        "layout_width": "match_parent",
+        "layout_height": "1dp",
+        "layout_alignParentBottom": "true",
+        "background": "#c0c7d1"
+    }
+]
+}

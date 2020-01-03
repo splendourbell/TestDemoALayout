@@ -1,0 +1,35 @@
+{
+    "class": "RelativeLayout",
+    "layout_width": "0dp",
+    "layout_height": "match_parent",
+    "layout_weight": "100",
+    "background": "#FFF",
+    "children": [
+        {
+        	"class": "LinearLayout",
+        	"layout_width": "match_parent",
+        	"layout_height": "match_parent",
+        	"orientation": "vertical",
+        	"children": [
+                {
+                    "class": "include",
+                    "layout": "@layout/ChefImageBox"
+                },
+                {
+                    "class": "include",
+                    "layout": "@layout/PizzaRemainingInfo"
+                },
+                {
+                    "class": "include",
+                    "layout": "@layout/PizzaIdsTable"
+                }
+            ]
+        },
+        {
+        	"class": "View",
+        	"layout_width": "1dp",
+        	"layout_height": "match_parent",
+        	"background": "#c0c7d1"
+        }
+    ]
+}

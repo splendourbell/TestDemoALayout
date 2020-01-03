@@ -1,0 +1,30 @@
+{
+	"class": "RelativeLayout",
+	"layout_width": "match_parent",
+	"layout_height": "match_parent",
+	"children": [
+        {
+            "class": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "ellipsize": "end",
+            "lines": "1",
+            "textStyle": "bold",
+            "textColor": "#000",
+            "layout_marginLeft": "6dp",
+            "layout_marginTop": "8dp",
+            "textSize": "14dp",
+            "text": "Bindo Pizza Factory Summary",
+            "id":"_factorySummaryText"
+        },
+        {
+            "class":"FlowLayout",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "layout_below": "_factorySummaryText",
+            "layout_marginLeft": "6dp",
+            "layout_marginTop": "4dp",
+            "id":"factorySummaryViews"
+        }
+    ]
+}

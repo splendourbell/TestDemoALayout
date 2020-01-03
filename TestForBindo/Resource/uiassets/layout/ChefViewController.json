@@ -1,0 +1,204 @@
+{
+	"class": "RelativeLayout",
+	"layout_width": "match_parent",
+	"layout_height": "match_parent",
+	"padding": "9dp",
+	"background": {
+		"class": "shape",
+		"shape": "rectangle",
+		"children": [
+			{
+				"class": "gradient",
+				"angle": "0",
+				"centerX":"0.5",
+				"centerY":"0.5",
+				"startColor": "#ba1f82",
+				"endColor": "#57005b"
+			}
+		]
+	},
+	"children": [
+		{
+			"class":"FlowLayout",
+			"layout_width": "match_parent",
+			"layout_height": "match_parent",
+			"children": [
+				{
+					"class": "LinearLayout",
+					"layout_width": "match_parent",
+					"layout_height": "match_parent",
+					"orientation": "vertical",
+					"id":"contentView",
+					"clickable": "true",
+					"children": [
+				        {
+				        	"class": "LinearLayout",
+				        	"layout_width": "match_parent",
+				        	"layout_height": "0dp",
+				            "layout_weight": "100",
+				        	"orientation": "horizontal",
+				            "id":"ChefsTable",
+				            "background": {
+				                "class": "shape",
+				                "shape": "rectangle",
+				                "children": [
+				                    {
+				                        "class": "stroke",
+				                        "width": "1px",
+				                        "color": "#c0c7d1"
+				                    }
+				                ]
+				            }
+				        },
+				        {
+				        	"class": "LinearLayout",
+				        	"layout_width": "match_parent",
+				        	"layout_height": "112dp",
+				        	"orientation": "horizontal",
+				            "background": {
+				                "class": "shape",
+				                "shape": "rectangle",
+				                "children": [
+				                    {
+				                        "class": "stroke",
+				                        "width": "1px",
+				                        "color": "#c0c7d1"
+				                    },
+				                    {
+				                        "class":"solid",
+				                        "color":"#FFF"
+				                    }
+				                ]
+				            },
+				        	"children": [
+				                {
+				                	"class": "RelativeLayout",
+				                	"layout_width": "0dp",
+				                	"layout_height": "match_parent",
+				                    "layout_weight": "3",
+				                    "children": [
+				                        {
+				                            "class": "include",
+				                            "layout": "@layout/FactorySummaryChefBox"
+				                        }
+				                    ]
+				                },
+				                {
+				                	"class": "RelativeLayout",
+				                	"layout_width": "0dp",
+				                	"layout_height": "match_parent",
+				                    "layout_weight": "1",
+				                    "children": [
+				                        {
+				                        	"class": "View",
+				                        	"layout_width": "1dp",
+				                        	"layout_height": "match_parent",
+				                        	"background": "#c0c7d1"
+				                        },
+				                        {
+				                            "class": "TextView",
+				                            "layout_width": "wrap_content",
+				                            "layout_height": "wrap_content",
+				                            "ellipsize": "end",
+				                            "lines": "-1",
+				                            "textStyle": "bold",
+				                            "textColor": "#000",
+				                            "layout_marginLeft": "6dp",
+				                            "layout_marginTop": "8dp",
+				                            "textSize": "14dp",
+				                            "layout_alignParentRight": "true",
+				                            "text": "Action Buttons："
+				                        }
+				                    ]
+				                },
+				                {
+				                	"class": "RelativeLayout",
+				                	"layout_width": "0dp",
+				                	"layout_height": "match_parent",
+				                    "layout_weight": "1",
+				                    "children": [
+				                        {
+				                        	"class": "View",
+				                        	"layout_width": "1dp",
+				                        	"layout_height": "match_parent",
+				                        	"background": "#c0c7d1"
+				                        },
+				                        {
+				                            "class": "include",
+				                            "layout": "@layout/Add10ButtonPizzaBox"
+				                        }
+				                    ]
+				                },
+				                {
+				                	"class": "RelativeLayout",
+				                	"layout_width": "0dp",
+				                	"layout_height": "match_parent",
+				                    "layout_weight": "1",
+				                    "children": [
+				                        {
+				                        	"class": "View",
+				                        	"layout_width": "1dp",
+				                        	"layout_height": "match_parent",
+				                        	"background": "#c0c7d1"
+				                        },
+				                        {
+				                            "class": "include",
+				                            "layout": "@layout/Add100ButtonPizzaBox"
+				                        }
+				                    ]
+				                },
+				                {
+				                	"class": "RelativeLayout",
+				                	"layout_width": "0dp",
+				                	"layout_height": "match_parent",
+				                    "layout_weight": "1",
+				                    "children": [
+				                        {
+				                        	"class": "View",
+				                        	"layout_width": "1dp",
+				                        	"layout_height": "match_parent",
+				                        	"background": "#c0c7d1"
+				                        },
+				                        {
+				                        	"class": "TextView",
+				                        	"layout_width": "wrap_content",
+				                        	"layout_height": "wrap_content",
+				                            "layout_marginLeft": "6dp",
+				                            "layout_marginTop": "8dp",
+				                            "lineSpacingExtra": "3dp",
+				                        	"ellipsize": "end",
+				                        	"lines": "-1",
+				                        	"textColor": "#000",
+				                        	"textSize": "12dp",
+				                        	"text": "Factory Main Switch.\nWarning. This will turn off all chefs:",
+				                            "id":"_text"
+				                        },
+				                        {
+				                        	"class": "RelativeLayout",
+				                        	"layout_width": "match_parent",
+				                        	"layout_height": "match_parent",
+				                            "layout_below": "_text",
+				                        	"children": [
+				                                {
+				                                	"class": "SwitchControl",
+				                                	"layout_height": "100dp",
+				                                	"layout_width": "100dp",
+				                                	"on": "true",
+													"action": "@selector/switchAll:",
+													"clickable": "true",
+													"id":"switchAll",
+				                                    "layout_centerInParent": "true"
+				                                }
+				                            ]
+				                        },
+
+				                    ]
+				                }
+				            ]
+				        }
+				    ]
+				}
+			]
+		}
+	]
+}

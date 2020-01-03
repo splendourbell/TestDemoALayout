@@ -1,0 +1,38 @@
+{
+	"class": "RelativeLayout",
+	"layout_width": "match_parent",
+	"layout_height": "wrap_content",
+    "paddingTop": "5dp",
+    "paddingBottom": "5dp",
+    "paddingLeft": "5dp",
+	"children": [
+        {
+        	"class": "RelativeLayout",
+            "layout_width": "wrap_content",
+        	"layout_height": "wrap_content",
+            "background":{
+                "class": "shape",
+                "shape": "rectangle",
+                "children": [
+                    {
+                        "class":"corners",
+                        "radius":"4dp",
+                    }
+                ]
+            },
+        	"children": [
+                {
+                	"class": "TextView",
+                	"layout_width": "wrap_content",
+                	"layout_height": "wrap_content",
+                	"ellipsize": "end",
+                	"lines": "1",
+                	"textSize": "12dp",
+                    "padding": "3dp",
+                    "textStyle": "bold",
+                    "id":"text"
+                }
+            ]
+        }
+    ]
+}

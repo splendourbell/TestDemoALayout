@@ -1,0 +1,45 @@
+{
+    "class": "RelativeLayout",
+    "layout_width": "match_parent",
+    "layout_height": "90dp",
+    "children": [
+        {
+            "class": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "ellipsize": "end",
+            "lines": "-1",
+            "textStyle": "bold",
+            "textColor": "#000",
+            "layout_marginLeft": "6dp",
+            "layout_marginRight": "6dp",
+            "layout_marginTop": "4dp",
+            "textSize": "12dp",
+            "text": "Pizza Chef 0",
+            "id":"chef_id"
+        },
+        {
+            "class": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_below": "chef_id",
+            "layout_marginTop": "4dp",
+            "layout_marginRight": "6dp",
+            "layout_marginLeft": "6dp",
+            "lineSpacingExtra": "4dp",
+            "ellipsize": "end",
+            "lines": "-1",
+            "textColor": "#000",
+            "textSize": "10dp",
+            "id":"speedText",
+            "text": "Remaining Pizza: 143\nSpeed:4 seconds per pizza"
+        },
+        {
+            "class": "View",
+            "layout_width": "match_parent",
+            "layout_height": "1dp",
+            "background": "#c0c7d1",
+            "layout_alignParentBottom": "true"
+        }
+    ]
+}

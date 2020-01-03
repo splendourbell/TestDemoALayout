@@ -1,0 +1,23 @@
+{
+    "class": "RelativeLayout",
+    "layout_width": "wrap_content",
+    "layout_height": "20dp",
+    "paddingLeft": "5dp",
+    "paddingRight": "5dp",
+    "layout_marginTop": "5dp",
+    "background": "#000",
+    "gravity": "center",
+    "children": [
+        {
+            "class": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "ellipsize": "end",
+            "lines": "1",
+            "textStyle": "bold",
+            "textColor": "#FFF",
+            "textSize": "14dp",
+            "text": "L.image"
+        }
+    ]
+}
